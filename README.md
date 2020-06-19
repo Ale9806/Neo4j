@@ -5,11 +5,18 @@ Neo4j is a native graph database, built from the ground up to leverage not only 
 Creat a new node with  a given  attribute: 
 
  ```
-CREATE (n:movie {title:"Avatar"}) RETURN  n
+CREATE (n:person {title:"Alejandro"}) RETURN  n
  ```
  <br>
 Visualize nodes: 
 
  ```
  MATCH (n) RETURN n
+ ````
+
+ <br>
+Update/set New property to exisitning node: 
+
+ ```
+MATCH (n:person {name:"Alejandro"}) SET n.age=34
  ````
