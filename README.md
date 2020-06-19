@@ -46,6 +46,14 @@ Delet a node with its attachments :
 MATCH (n { name: 'Andy' }) DETACH DELETE n
  ````
  
+ 
  ## EDGES
  
+ <br>
+Create edges on existing nodes : 
+
+ ```
+MATCH (a:person {name:'Alejandro'}) , (b:person {name:'Eduardo'}) MERGE (a)-[r:Same]->(b)
+ ````
  
+match (a:person {name:'Alejandro'}) , (b:person {name:'Eduardo'}) merge (a)-[r:Same]->(b)
