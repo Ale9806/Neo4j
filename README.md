@@ -72,3 +72,11 @@ Create edges on existing nodes (OPTION 2) :
  ```
  match (a:person {name:"Alejandro"}),(b:person {name:"Curtis"}) CREATE (a)-[r:friends]->(b)
  ````
+ 
+
+ 
+ Create loops on existing nodes : 
+
+ ```
+ match (a:person {name:"Alejandro"}),(b:person {name:"Alejandro"}) CREATE (a)-[r:same]>(b)
+ ````
