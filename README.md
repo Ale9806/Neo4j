@@ -11,7 +11,7 @@ Creat a new node with  a given  atribute:
 CREATE (n:person {title:"Alejandro"}) RETURN  n    or  CREATE (n:player {title:"Cristaino Ronaldo",team:"Juventus"}) RETURN  n
  ```
  <br>
- Creat a mutilpe nodes with given  atribute (just separeate them with comma: 
+ Creat a mutilpe nodes with given  atribute (just separeate them with comma): 
 
  ```                   
 CREATE (n:person {title:"Alejandro"}), (n:person {title:"Curtis"})
