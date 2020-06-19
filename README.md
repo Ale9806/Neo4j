@@ -2,7 +2,7 @@
 Neo4j is a native graph database, built from the ground up to leverage not only data but also data relationships. Neo4j connects data as it’s stored, enabling queries never before imagined, at speeds never thought possible.
 * Neo4j Basic commands: 
 
-## NODES
+## NODES ()
 
 Creat a new node with  a given  atribute: 
 
@@ -56,12 +56,19 @@ MATCH (n { name: 'Andy' }) DETACH DELETE n
  ````
  
  
- ## EDGES
+ ## EDGES []
  
  <br>
-Create edges on existing nodes : 
+Create edges on existing nodes (OPTION 1) : 
 
  ```
 MATCH (a:person {name:'Alejandro'}) , (b:person {name:'Eduardo'}) MERGE (a)-[r:Same]->(b)
  ````
  
+
+ 
+Create edges on existing nodes (OPTION 2) : 
+
+ ```
+ match (a:person {name:"Alejandro"}),(b:person {name:"Curtis"}) CREATE (a)-[r:friends]->(b)
+ ````
