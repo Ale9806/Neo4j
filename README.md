@@ -7,6 +7,7 @@ Neo4j is a native graph database, built from the ground up to leverage not only 
 Creat a new node with  a given  atribute: 
 
  ```
+          #label   #properties
 CREATE (n:person {title:"Alejandro"}) RETURN  n
  ```
  <br>
