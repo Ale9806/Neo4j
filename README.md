@@ -37,3 +37,11 @@ Delet all existing node:
  ```
 MATCH (n) DETACH DELETE n
  ````
+
+
+ <br>
+Delet a node with its attachments : 
+
+ ```
+MATCH (n { name: 'Andy' }) DETACH DELETE n
+ ````
