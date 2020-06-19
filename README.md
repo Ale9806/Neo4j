@@ -13,8 +13,9 @@ CREATE (n:person {title:"Alejandro"}) RETURN  n    or  CREATE (n:player {title:"
  <br>
  Creat  mutilpe nodes with given  atribute (just separeate them with comma): 
 
- ```                   
-CREATE (n:person {title:"Alejandro"}), (n:person {title:"Curtis"})
+ ```  
+ # give nodes different labels (a,b)
+CREATE (a:person {name:"Anish"}), (b:person {name:"Curtis"})
  ```
  
  <br>
