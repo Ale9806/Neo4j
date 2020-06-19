@@ -56,4 +56,3 @@ Create edges on existing nodes :
 MATCH (a:person {name:'Alejandro'}) , (b:person {name:'Eduardo'}) MERGE (a)-[r:Same]->(b)
  ````
  
-match (a:person {name:'Alejandro'}) , (b:person {name:'Eduardo'}) merge (a)-[r:Same]->(b)
