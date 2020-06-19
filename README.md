@@ -35,7 +35,7 @@ MATCH (n:person {name:"Alejandro"}) REMOVE  n.age
 Delet all existing node: 
 
  ```
-MATCH (n) DETACH DELETE n
+MATCH (n) DETACH DELETE n    or   match (n) where n.name="Alex" delete n
  ````
 
 
