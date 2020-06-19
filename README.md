@@ -8,7 +8,7 @@ Creat a new node with  a given  atribute:
 
  ```
           #label   #properties
-CREATE (n:person {title:"Alejandro"}) RETURN  n
+CREATE (n:person {title:"Alejandro"}) RETURN  n    or  CREATE (n:player {title:"Cristaino Ronaldo",team:"Juventus",country:"Portugal"}) RETURN  n
  ```
  <br>
 Visualize nodes: 
