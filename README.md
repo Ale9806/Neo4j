@@ -29,3 +29,11 @@ Remove atribute of an existing node:
  ```
 MATCH (n:person {name:"Alejandro"}) REMOVE  n.age
  ````
+
+
+ <br>
+Delet all existing node: 
+
+ ```
+MATCH (n) DETACH DELETE n
+ ````
