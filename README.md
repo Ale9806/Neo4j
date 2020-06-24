@@ -1,14 +1,17 @@
 # Neo4j
-Neo4j is a native graph database, built from the ground up to leverage not only data but also data relationships. Neo4j connects data as it’s stored, enabling queries never before imagined, at speeds never thought possible.
+Neo4j is a native graph database, built from the ground up to leverage not only data but also data relationships. Neo4j connects data as it’s stored, enabling queries never before imagined, at speeds never thought possible. In order to download Neo4j clik the following link [Neo4j Download](https://neo4j.com/)
 * Neo4j Basic commands: 
 
+**NEO4J is not case sensitive, meaning MATCH and match are both valid**
 ## NODES ()
+Nodes are denoted by ()
+
 
 Creat a new node with  a given  atribute: 
 
  ```
           #label   #properties                           #multiple  atributes
-CREATE (n:person {title:"Alejandro"}) RETURN  n    or  CREATE (n:player {title:"Cristaino Ronaldo",team:"Juventus"}) RETURN  n
+CREATE (n:person {title:"charlie"}) RETURN  n    or  CREATE (n:player {title:"Cristaino Ronaldo",team:"Juventus"}) RETURN  n
  ```
  <br>
  Creat  mutilpe nodes with given  atribute (just separeate them with comma): 
@@ -57,6 +60,7 @@ MATCH (n { name: 'Andy' }) DETACH DELETE n     or      match (n) where n.name="A
  
  
  ## EDGES []
+Edges are denoted by []
  
  <br>
 Create edges on existing nodes (OPTION 1) : 
