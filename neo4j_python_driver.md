@@ -51,3 +51,5 @@ graph.close()
 ````
 
 **Congratulations! You now Know how to work with Databases using python's driver for Neo4j**
+
+Make sure to follow the Jupyter notebooks to learn more! 
